@@ -1,0 +1,16 @@
+---
+import MyImage from "../components/MyImage.astro";
+import Layout from "../layouts/Layout.astro";
+import testImage from "../assets/test.jpg";
+---
+
+<Layout>
+  <div
+    style={{
+      padding: "32px",
+    }}
+  >
+    <h1>This image works on local but not in Vercel:</h1>
+    <MyImage src={testImage} />
+  </div>
+</Layout>

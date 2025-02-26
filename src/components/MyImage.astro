@@ -1,0 +1,19 @@
+---
+import { Image } from "astro:assets";
+
+interface Props {
+  src: ImageMetadata;
+}
+
+const props = Astro.props;
+---
+
+<Image
+  src={props.src}
+  alt="test image"
+  width={200}
+  height={200}
+  style={{
+    border: "1px solid black",
+  }}
+/>

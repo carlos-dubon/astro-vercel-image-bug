@@ -8,6 +8,6 @@ export default defineConfig({
   output: "server",
   adapter: vercel({
     imageService: true,
-    edgeMiddleware: true,
+    devImageService: "sharp",
   }),
 });

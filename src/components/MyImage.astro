@@ -3,6 +3,9 @@ import { Image } from "astro:assets";
 
 interface Props {
   src: ImageMetadata;
+  alt: string;
+  width: number;
+  height: number;
 }
 
 const props = Astro.props;
@@ -10,9 +13,9 @@ const props = Astro.props;
 
 <Image
   src={props.src}
-  alt="test image"
-  width={200}
-  height={200}
+  alt={props.alt}
+  width={props.width}
+  height={props.height}
   style={{
     border: "1px solid black",
   }}
